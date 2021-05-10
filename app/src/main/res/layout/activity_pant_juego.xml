@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="5"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layoutJuego"
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/btnSalto"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/salto"
+            android:shadowColor="#A8A8A8"
+
+            android:shadowDx="0"
+            android:shadowDy="0"
+
+            android:shadowRadius="5"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/btnDer"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO" />
+
+        <Button
+            android:id="@+id/btnDer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="48dp"
+
+            android:layout_marginLeft="48dp"
+
+            android:layout_marginTop="28dp"
+            android:background="@drawable/buttons"
+
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="R"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/btnIzq"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnIzq"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/buttons"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="L"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
